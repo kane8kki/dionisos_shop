@@ -47,5 +47,22 @@
     });
   });
 </script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.querySelector('.logo');
+    
+    logo.addEventListener('mouseover', function () {
+      logo.style.transform = 'scale(1.1)';
+    });
+
+    logo.addEventListener('mouseout', function () {
+      logo.style.transform = 'scale(1)';
+    });
+	
+	logo.addEventListener('click', function () {
+      window.location.replace('https://kane8kki.github.io/dionisos_shop/');
+    });
+  });
+</script>
 </body>
 </html>
