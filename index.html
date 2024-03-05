@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Votre Marque - Vêtements</title>
+    <!-- Inclure la bibliothèque Three.js -->
+    <script src="https://threejs.org/build/three.js"></script>
+</head>
+<body class="patagonia-style">
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="dionizoslogo.png" alt="file le logo mec :)))))))))))))">
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="morflax-studio_4-removebg-preview (1).png" alt="hoodie knitwear Directoer">
+            <div class="product-info">
+                <h1>hoodie knitwear Director</h1>
+                <p>idéal pour se sentir supérieur à ses proches (placeholder tkt gab) </p>
+                <p class="price">Prix : $55.99</p>
+                <button class="enlarge-button">Ajouter au panier</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 dionizos. Tous droits réservés.</p>
+    </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const productImage = document.querySelector('.product img');
+    const originalImageSrc = productImage.src;
+    const gifSrc = 'test.gif'; // Remplacez cela par le chemin réel de votre GIF
+
+    productImage.addEventListener('mouseover', function () {
+      productImage.src = gifSrc;
+    });
+
+    productImage.addEventListener('mouseout', function () {
+      productImage.src = originalImageSrc;
+    });
+  });
+</script>
+</body>
+</html>
