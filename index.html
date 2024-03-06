@@ -39,6 +39,10 @@
     const productImage = document.querySelector('.product img');
     const originalImageSrc = productImage.src;
     const gifSrc = 'test.gif'; // Remplacez cela par le chemin réel de votre GIF
+	  
+    productImage.addEventListener('click', function () {
+      window.location.href = 'product_detail.html';
+    });
 
     productImage.addEventListener('mouseover', function () {
       productImage.src = gifSrc;
