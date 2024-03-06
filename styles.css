@@ -86,3 +86,11 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.easter-egg-button {
+    background-color: #1a1a1a; /* Assurez-vous que c'est la couleur du fond */
+    border: none;
+    color: #1a1a1a; /* Assurez-vous que c'est la couleur du fond */
+    font-size: 0; /* Rend la taille de police zéro pour rendre le texte invisible */
+    cursor: pointer;
+}
